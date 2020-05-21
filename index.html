@@ -146,12 +146,25 @@ class: center, middle
 
 ---
 # Introduction
+---
+name: last-page
+template: inverse
 
+## Thank you!
+
+Slideshow created using [remark](http://github.com/gnab/remark).
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
+    <script src="downloads/remark-latest.min.js"></script>
     <script>
-      var slideshow = remark.create();
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
     </script>
   </body>
 </html>
