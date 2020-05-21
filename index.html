@@ -54,9 +54,11 @@
         padding: 15px;
       }
       .inverse {
-        background: #272822;
+        /* background: #272822; */
+        /* text-shadow: 0 0 20px #333; */
+        background: #000000;
         color: #777872;
-        text-shadow: 0 0 20px #333;
+        text-shadow: 0 0 20px #a9a9a9;
       }
       .inverse h1, .inverse h2 {
         color: #f3f3f3;
@@ -122,30 +124,59 @@ layout: true
 class: center, middle, inverse
 ---
 # A Spotlight
-a thirty minute proposal in the form of a presentation for developer relations @ github
-.footnote[by tom callaway]   
+a thirty minute proposal in the form of a presentation 
+for developer relations @ github
+.footnote[by tom callaway - 2020-05-27]
+???
+I made this!
 ---
-## GitHub is the largest home for open source
----      
-test123
+.center[![Total Eclipse of the Octocat](https://octodex.github.com/images/total-eclipse-of-the-octocat.jpg)]
+
+???
+There is no dispute. GitHub is the largest home for open source.
+But with over 50 million users and almost 40 million repositories, getting a project noticed can be challenging.
 ---
 layout: false
 .left-column[
-  ## The Problem
+  ## Core Goals
 ]
 .right-column[
-Early-stage open source projects face a daunting challenge:
+To gain momementum, early-stage open source projects need to:
 
-- to find new users
+- find new users
 
-- to find new contributors
-
-Lorem ipsum
+- find new contributors
 ]
+???
+Early-stage open source projects face a daunting challenge as they attempt to accomplish two fundamental goals: 
+finding new users and finding new contributors. These goals are key to both the health and the growth of the project.
 ---
-class: center, middle
-<img src="FOSS-contributor-pyramid.png" width="400" alt="a pyramid divided into different colored segments, each segment has an arrow pointing to the one above it, and the segments are labeled, in order from bottom to top: USERS, POWER USERS, CONTRIBUTORS, MAINTAINERS"> 
+.left-column[
+  ## Goals
+  ## The Path
+]
+.right-column[
+- These goals are connected
 
+- No one contributes to an open source project they do not use.red[*]
+
+.footnote[.red[*] Okay, almost no one]
+]
+???
+These two goals are tied to each other since virtually no one contributes to an open source project that they do not use personally. Over time, some users become “power users”, some “power users” become contributors, and some contributors become “top contributors”, eventually even maintainers.
+---
+.left-column[
+  ## The Problem
+  ## The Path
+  ## The Pyramid
+]
+.right-column[
+.center[
+<img src="FOSS-contributor-pyramid.png" width="400" alt="a pyramid divided into different colored segments, each segment has an arrow pointing to the one above it, and the segments are labeled, in order from bottom to top: USERS, POWER USERS, CONTRIBUTORS, MAINTAINERS"> 
+]
+]
+???
+This evolution can be modeled as a pyramid. At each stage of the pyramid, some people will stay at the level they are at, but in a healthy project, a percentage of participants will move up over time.
 ---
 # Introduction
 ---
@@ -155,7 +186,7 @@ template: inverse
 ## Thank you!
 
 Slideshow created using [remark](http://github.com/gnab/remark).
-    </textarea>
+p    </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
       var hljs = remark.highlighter.engine;
