@@ -1,18 +1,69 @@
 <!DOCTYPE html>
+<!-- Copyright (c) 2020 - Tom Callaway <spotrh@gmail.com>
+     It is derived from the MIT licensed Remark templates at https://github.com/gnab/remark
+     It also uses (but does not contain) the following fonts:
+      - Montserrat, licensed under the SIL Open Font License
+        https://fonts.google.com/specimen/Montserrat
+      - Roboto, licensed under the Apache License, Version 2.0
+        https://fonts.google.com/specimen/Roboto
+     It links to the following images:
+      - Total Eclipse of the Octocat
+        https://octodex.github.com/images/total-eclipse-of-the-octocat.jpg
+        Use is limited to referring to GitHub as the largest home for open source projects,
+        which is explicitly permitted here: https://octodex.github.com/faq/
+        GITHUB®, the GITHUB® logo design, OCTOCAT® and the OCTOCAT® logo design are 
+        exclusive trademarks registered in the United States by GitHub, Inc. The OCTOCAT 
+        design is the exclusive property of GitHub, Inc and has been federally registered 
+        with the United States Copyright Office. All rights reserved. No adaptation or 
+        use of any kind of any of our registered trademarks or copyrights, or any other 
+        contents of this website, is allowed without the express written permission of 
+        GitHub, Inc.
+      - Volunteer Hands Help
+        https://pixabay.com/illustrations/volunteer-hands-help-colors-2055010/
+        Image by Tumisu: https://pixabay.com/users/Tumisu-148124/
+        License terms: https://pixabay.com/service/terms/#license
+     All other images linked to in this document are 
+     Copyright (c) 2020 - Tom Callaway <spotrh@gmail.com> 
+     and can be used under the same license as this document (MIT).
+
+     SPDX-License-Identifier: MIT
+
+     Permission is hereby granted, free of charge, to any person obtaining a 
+     copy of this software and associated documentation files (the "Software"), 
+     to deal in the Software without restriction, including without limitation 
+     the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+     and/or sell copies of the Software, and to permit persons to whom the 
+     Software is furnished to do so, subject to the following conditions:
+
+     The above copyright notice and this permission notice (including the next 
+     paragraph) shall be included in all copies or substantial portions of the 
+     Software.
+
+     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+     OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+     NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+     DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+     OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
+     USE OR OTHER DEALINGS IN THE SOFTWARE.
+  
+     *****
+
+     You're still here? It's over. Go home. Go. Or you know, view the slides.
+-->     
 <html>
   <head>
     <title>A Spotlight</title>
     <meta charset="utf-8">
-    <meta name="description" content="a thirty minute proposal in the form of a presentation for developer relations @ github" />
+    <meta name="description" content="a thirty minute proposal for developer relations @ github" />
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Jost:wght@700);
-      @import url(https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,500;1,500);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500);
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
 
       body { font-family: 'Montserrat'; }
       h1, h2, h3 {
-        font-family: 'Jost';
-        font-weight: 700;
+        font-family: 'Roboto';
+        font-weight: bold;
         margin-bottom: 0;
       }
       .remark-slide-content h1 { font-size: 3em; }
@@ -33,8 +84,6 @@
         background: #e7e8e2;
         border-radius: 5px;
       }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-      .remark-code-line-highlighted     { background-color: #373832; }
       .pull-left {
         float: left;
         width: 47%;
@@ -124,9 +173,8 @@ layout: true
 class: center, middle, inverse
 ---
 # A Spotlight
-a thirty minute proposal in the form of a presentation 
 for developer relations @ github
-.footnote[by tom callaway - 2020-05-27]
+.footnote[by tom callaway<BR>2020-05-27]
 ???
 I made this!
 ---
@@ -138,10 +186,10 @@ But with over 50 million users and almost 40 million repositories, getting a pro
 ---
 layout: false
 .left-column[
-  ## Core Goals
+  ### Goals
 ]
 .right-column[
-To gain momementum, early-stage open source projects need to:
+To gain momenentum, early-stage open source projects need to:
 
 - find new users
 
@@ -152,8 +200,8 @@ Early-stage open source projects face a daunting challenge as they attempt to ac
 finding new users and finding new contributors. These goals are key to both the health and the growth of the project.
 ---
 .left-column[
-  ## Goals
-  ## The Path
+  ### Goals
+  ### The Path
 ]
 .right-column[
 - These goals are connected
@@ -166,9 +214,9 @@ finding new users and finding new contributors. These goals are key to both the 
 These two goals are tied to each other since virtually no one contributes to an open source project that they do not use personally. Over time, some users become “power users”, some “power users” become contributors, and some contributors become “top contributors”, eventually even maintainers.
 ---
 .left-column[
-  ## The Problem
-  ## The Path
-  ## The Pyramid
+  ### Goals
+  ### The Path
+  ### The Pyramid
 ]
 .right-column[
 .center[
@@ -178,15 +226,385 @@ These two goals are tied to each other since virtually no one contributes to an 
 ???
 This evolution can be modeled as a pyramid. At each stage of the pyramid, some people will stay at the level they are at, but in a healthy project, a percentage of participants will move up over time.
 ---
-# Introduction
+.left-column[
+  ### Goals
+  ### The Path
+  ### The Pyramid
+  ### Simplified Problem
+]
+.right-column[
+<strong>New open source projects need to find new users to grow, but it is hard for them to stand out amongst the large numbers of projects on GitHub.</strong>
+]
+???
+Understanding this allows us to simplify the problem statement to:
+New open source projects need to find new users to grow, but it is hard for them to stand out amongst the large numbers of projects on GitHub.
+---
+template: inverse
+class: middle, center
+
+.center[
+![Screen capture of the GitHub Trending page](trending.png)
+]
+???
+Traditionally, the burden of raising awareness of an open source project falls almost entirely onto the project, but GitHub does provide some tooling to assist them today.
+The concept of “stars” provides an indicator of the popularity (and possibly, usage) of a repository. While a large number of stars is a good metric for identifying a healthy open source project in a mature stage, this is not expected for an open source project in an early stage.
+Since a high star rating (per day) is important to being featured on the GitHub trending page, it is less likely that new open source projects will be found here.
+---
+.left-column[
+  ### Our Objective
+]
+.right-column[
+<BR><BR>
+# Help early-stage open source projects on GitHub to find and grow a user base.
+]
+---
+.left-column[
+  ### Our Objective
+  ### Key Results
+]
+.right-column[
+* 30% growth in star count
+* 50% increase in clones and downloads
+* 20 new pull requests
+
+<em>Period: 3 months</em>
+]
+???
+Initially, I suggest a 3-month period for achieving these key results.
+---
+template: inverse
+class: middle, center
+
+# GitHub Open Source <BR><BR> Spotlight Program
+
+.footnote[the idea]
+???
+GitHub, with help with volunteers from the wider open source community, will select some early-stage open source projects (that live on GitHub) to be promoted as Github Open Source Spotlight Projects.
+---
+.left-column[
+  ### Promotion
+]
+.right-column[
+* A dedicated collection featuring the winners
+* A dedicated page for the program on github.com
+* Blog write ups of the project (including interviews from the maintainer(s)
+* Social media posts promoting the winning projects (not just reshares)
+* A graphical badge
+]
+---
+.left-column[
+  ### Promotion     
+  ### Focus Areas
+]
+.right-column[
+* Artistic/Creative
+* Gaming
+* Humanitarian
+* Infrastructure
+* Mobile
+* Scientific
+* Web Application
+]
+???
+GitHub has an excellent infrastructure for enabling repositories to provide category metadata about their repository through “topics”. I suggest we take advantage of that, and choose several topics for this program (beyond “open source”) as focus areas.
+This list is obviously up for debate, and should be reinforced with metrics of which topics are popular before any launch-instance of the program.
+---
+
+.left-column[
+  ### Promotion
+  ### Focus Areas
+  ### Hey, you forgot...
+]
+.right-column[
+  There are any number of other focus areas that could be chosen:
+* Back End
+* Blockchain/Cryptocurrency
+* CI/CD
+* Cloud 
+* Container
+* Database
+* Education
+* Embedded/IOT
+* Front End
+* Machine Learning
+* $PROGRAMMING_LANGUAGE
+* QE
+]
+???
+This gives an idea of the strong potential this program can have across multiple technology categories. Initially, the program should start simple, with focus area categories that have minimal overlap, but are likely to have good applicants (both in quality and quantity). We can always evolve our focus areas over time.
+---
+template: inverse
+class: middle, center
+
+# 5 x 7 = 35 .red[*]
+
+.footnote[.red[*]140 per year]
+???
+There should be at least five featured projects in each category per quarter (3 months). For the seven proposed focus areas, there would be 35 projects per quarter (and 140 per year).
+---
+.left-column[
+  ### Opt-in
+]
+.right-column[
+
+.center[
+![Shadows of multiple hands raised as if to volunteer, in different colors](volunteer-2055010_640.png)
+
+.footnote[<span style="font-size: 0.7em;">Image by <a href="https://pixabay.com/users/Tumisu-148124/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2055010">Tumisu</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2055010">Pixabay</a></span>]
+]
+]
+???
+Some projects may not want promotion. They may be content to be just as they are, and we should respect that. To be considered for inclusion in the OSSP, projects should opt-in.
+To start the application process, we should have projects complete a smart web form. I emphasize smart here, because we do not want this to feel like doing your taxes.
+This form should contain a checklist of the criteria for consideration, with as many of them auto-checked as possible. The GitHub API should be able to help us here.
+---
+template: inverse
+class: middle, center
+
+## The <span style="color: red;">Heart</span> of our Criteria
+<BR>
+[![Screenshot of opensource.guide](opensource.guide.png)](https://opensource.guide/)
+
+???
+GitHub already has some great guides for Open Source Software, specifically everything at opensource.guide and the Building A Strong Community section in the GitHub Enterprise docs.
+These reference materials are excellent, and we want to encourage early-stage open source projects on GitHub to follow the advice they provide. By pointing to them explicitly, we not 
+only guide people to them, but we also help projects know what we are looking for them to do well.
+---
+.left-column[
+  ## Criteria
+### - Qualified
+]
+.right-column[
+ * GitHub account
+ * Commit access to the project
+]
+---
+.left-column[ 
+  ## Criteria
+### - Qualified
+### - License
+]
+.right-column[
+ * Project repo clearly (and correctly) marked with a valid open source license
+]
+---
+.left-column[
+  ## Criteria
+### - Qualified
+### - License
+### - Topics
+]
+.right-column[
+ * Project repo has a topic applied that matches our focus areas
+    * If multiple, they should choose the one to be considered under
+]
+???
+This refers to the GitHub topics feature.
+---
+.left-column[
+  ## Criteria
+### - Qualified
+### - License  
+### - Topics
+### - Stars
+]
+.right-column[
+ * <strong>Below</strong> a certain threshold of stars
+    * My best guess: 1000
+]
+???
+We are not trying to help already popular projects, so projects should be below a certain threshold of stars. (I’m honestly not sure what this threshold should be, my best guess is 1000, but even that may be too high or too low.)
+---
+.left-column[
+  ## Criteria
+### - Qualified
+### - License
+### - Topics
+### - Stars
+### - Function
+]
+.right-column[
+ * The project needs to work.
+    * Not perfect, not feature complete, just able to do something
+ * Tell us what it can do today.
+    * Include anything known to be missing/broken
+]
+???
+The project needs to work. It doesn’t need to do everything or be perfect, but it needs to actually have function. This program is not about “idea” repositories that are hoping someone will show up and start actual creation. The project should be able to point to a revision, tell us what works (and what they know is missing/broken), and be judged on that. We will be forgiving, but only to a point.
+---
+.left-column[
+  ## Criteria
+### - Qualified
+### - License
+### - Topics
+### - Stars
+### - Function
+### - Prepared
+]
+.right-column[
+Projects need to have:
+* A README.md of substance (e.g. word count)
+* A set of contributing guidelines
+    * CONTRIBUTING
+* A code of conduct
+    * CODE_OF_CONDUCT
+* How to get help
+    * SUPPORT
+* Documentation beyond README
+    * Does not need to be complete
+* An issue template
+    * ISSUE_TEMPLATE
+* A pull request template
+    * PULL_REQUEST_TEMPLATE
+]
+---
+.left-column[
+  ## Criteria
+### - Qualified
+### - License
+### - Topics
+### - Stars
+### - Function
+### - Prepared
+### - Legal
+]
+.right-column[
+* Agree to the legal terms and conditions
+]
+???
+This is a contest, at least legally. We need to get legal terms/rules/conditions created and have them agree to those terms here.
+---
+## Project Information
+* Ask smart questions that cannot be autogenerated, to be answered in the applicant's own words
+    * Not essays, just a few sentences
+* Some suggestions
+    * What is the purpose of your project?
+    * How is it unique?
+    * What features/functionality do you hope to add? (TODO)
+    * Why do you want to be featured as a GitHub Open Source Spotlight Project?
+???
+This will give us a better sense of the project and also help craft messaging when the project is being promoted within the program, if accepted.
+---
+.left-column[
+  ## Reviewing
+### - Two-step
+]
+.right-column[
+<!-- I know there are better ways to fix spacing, but... HACK HACK HACK -->
+<BR><BR>
+Step 1: Internal review by Hubbers
+* Narrow pool to 20 per category
+
+<BR>
+Step 2: Final review by Open Source category experts
+* Could be Hubbers, could be external
+* Chooses the final five
+]
+---
+.left-column[
+  ## Reviewing
+### - Two-step 
+### - Scoring
+]
+.right-column[
+<BR><BR>
+* 0-5 scale
+    * 0 is "does not meet"
+    * 5 is "a perfect example"
+* Scored in these categories
+    * Functionality
+        * Does it do what it claims to do?
+    * Documentation
+        * Was it present, clear, and useful?
+    * Originality
+        * Does this project do something new (or something old in a new way)?
+    * Health Check
+        * Does the current upstream seem active? 
+        * Are there recent commits?
+        * Have existing issues been addressed/triaged?
+    * Opportunities
+        * Are there clear places for new folks to get involved?
+]
+---
+.left-column[
+  ## Reviewing
+### - Two-step
+### - Scoring
+### - Teams
+]
+.right-column[
+<BR><BR>
+* Divide out applications for review in groups
+* Take the average of the scores to determine top 20, then top 5.
+]
+???
+The amount of people in the reviewing teams should reflect the scope of the work as much as possible, but it should not be too small to avoid burdening any single person, nor too big. The idea is to divide out the applications for review in groups, then take the average of the scores to determine the top 20, then 5 winners.
+We should consider some way of thanking reviewers (internally and externally) for their time. Possibly program-branded swag or some other item of reasonable monetary value.
+---
+## Measuring Success .red[*]
+
+* Star count after being featured
+* Number of repository clones
+* Number of repository forks
+* Number of release downloads
+* Number of new pull requests
+* Number of new issues opened
+* Number of additional unique contributors
+* Social media likes, reshares, and click-through percentages
+* Did this project make it to the Trending page?
+
+.footnote[.red[*] With data!]
+???
+All of these metrics should be done by count and percentage growth. It should be possible to automate their collection via GitHub API calls, and they should be generated at regular intervals to see how the impact of the program holds over time. While they go beyond helping to measure the initial Key Results, they help us to see a more complete picture of the impact of the program, as well as to inform future evolutions of our key results.
+---
+template: inverse
+class: middle, center
+
+# TRANSPARENCY
+???
+Since open source requires transparency, we should post an annual report detailing the program’s metrics in aggregate (not per project, as we do not want this to have a negative effect on any featured projects which do not grow).
+---
+## Resources needed
+
+* Reviewers to look over submissions (internal and external)
+* Marketing resources to promote winners via web and social
+* Marketing resources to promote the program (to get applicants)
+* Creative resources to create a brand for this program
+* Technical resources to build and maintain the application form
+* Budget for branded swag
+---
+## Risks
+
+* We can’t do this because of legal restrictions
+    * It’s more likely that there will be people in locales who are not eligible
+* No one applies
+* Very few projects apply (“the best of the worst”)
+* Too many projects apply (“so much hay!”)
+* Our promotional efforts do not have enough impact (“lighter fluid does not burn”)
+* We highlight a project and discover they’re stuck in an early stage of maturity due to their own unhealthy behavior (which they are unable or unwilling to correct) that our reviewers didn’t catch
+* Not enough people to review projects (either internal or external)
+---
+## Nice to haves
+
+* Program specific swag
+    * Unique octocat sticker
+    * Anything appropriate with the program branding
+* A cash stipend for the featured projects
+    * Look to Google Summer of Code for guidance on how to manage this
+* Project demo in the GitHub booth at a major open source event
+    * Provide funding for a project rep to attend the event and give their demo
+    * Not the whole GH booth, just a featured area
+* Expand program from a quarterly recognition model to a more frequent recognition
+    * Add an annual winner?
+* Create a community of applicants and engage them
 ---
 name: last-page
 template: inverse
 
-## Thank you!
+# Thank you!
 
 Slideshow created using [remark](http://github.com/gnab/remark).
-p    </textarea>
+    </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
       var hljs = remark.highlighter.engine;
